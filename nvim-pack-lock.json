@@ -36,6 +36,10 @@
       "rev": "086a40dc7ed8242c03be9f47fbcee68699cc2395",
       "src": "https://github.com/stevearc/conform.nvim"
     },
+    "cord.nvim": {
+      "rev": "0be090969e978f7442870ef227e09eff7bf3480d",
+      "src": "https://github.com/vyfor/cord.nvim"
+    },
     "css-vars.nvim": {
       "rev": "0615782c320f729b04d9c51a8a61fb498ee4234a",
       "src": "https://github.com/jdrupal-dev/css-vars.nvim"
@@ -43,6 +47,10 @@
     "edgy.nvim": {
       "rev": "8bfd2808994a988c975694122f68624b8a219f5f",
       "src": "https://github.com/folke/edgy.nvim"
+    },
+    "endpoint.nvim": {
+      "rev": "91082b3120cab9d10c93cac0c583a97801e8027d",
+      "src": "https://github.com/zerochae/endpoint.nvim"
     },
     "fidget.nvim": {
       "rev": "889e2e96edef4e144965571d46f7a77bcc4d0ddf",
