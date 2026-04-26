@@ -20,6 +20,7 @@ local now_if_args, later = Config.now_if_args, Config.later
 -- immediately when starting nvim on a file.
 now_if_args(function()
 	add({
+		"https://github.com/jdrupal-dev/css-vars.nvim",
 		"https://github.com/folke/lazydev.nvim",
 		"https://github.com/mikavilpas/blink-ripgrep.nvim",
 		"https://github.com/Kaiser-Yang/blink-cmp-git",
@@ -75,6 +76,10 @@ now_if_args(function()
 				markdown = { "lsp", "path", "snippets", "buffer", "ripgrep" },
 				gitcommit = { "git", "lsp", "path", "snippets", "buffer" },
 				sql = { "dadbod", "lsp", "path", "snippets", "buffer" },
+				typescriptreact = { "css_vars", "lsp", "path", "snippets", "buffer" },
+				javascriptreact = { "css_vars", "lsp", "path", "snippets", "buffer" },
+				typescript = { "css_vars", "lsp", "path", "snippets", "buffer" },
+				javascript = { "css_vars", "lsp", "path", "snippets", "buffer" },
 			},
 			providers = {
 				dadbod = { name = "Dadbod", module = "vim_dadbod_completion.blink" },
@@ -94,6 +99,15 @@ now_if_args(function()
 					module = "blink-cmp-git",
 					name = "Git",
 					opts = {},
+				},
+				css_vars = {
+					name = "css-vars",
+					module = "css-vars.blink",
+					opts = {
+						-- WARNING: The search is not optimized to look for variables in JS files.
+						-- If you change the search_extensions you might get false positives and weird completion results.
+						search_extensions = { ".js", ".ts", ".jsx", ".tsx" },
+					},
 				},
 			},
 		},
