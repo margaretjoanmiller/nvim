@@ -127,6 +127,8 @@ later(function()
 		{ "<Leader>:",       function() Snacks.picker.command_history() end,   desc = "Command history" },
 		{ "<Leader>,",       function() Snacks.picker.buffers() end,           desc = "Buffers" },
 
+    {"<Leader>ee", function () Snacks.explorer() end, desc = "Explorer"},
+
 		-- Find
 		{ "<Leader>ff", function() Snacks.picker.files() end,                                    desc = "Files" },
 		{ "<Leader>fb", function() Snacks.picker.buffers() end,                                  desc = "Buffers" },

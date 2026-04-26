@@ -141,6 +141,9 @@ Config.later(function() vim.diagnostic.config(diagnostic_opts) end)
 
 -- neovide
 vim.g.neovide_cursor_trail_size = 0.0
+vim.g.neovide_window_blurred = true
+vim.g.neovide_opacity = 0.95
+vim.g.neovide_normal_opacity = 0.95
 
 if vim.g.neovide then
 	local function save()

@@ -104,7 +104,7 @@ now_if_args(function()
 		ensure_installed = {
 			-- LSP servers (nvim-lspconfig names / mason names)
 			"lua-language-server",
-			"vtsls",
+			"tsgo",
 			"gopls",
 			"templ",
 			"rust-analyzer",
@@ -148,7 +148,7 @@ now_if_args(function()
 	-- Per-server overrides go in after/lsp/<server>.lua
 	vim.lsp.enable({
 		"lua_ls",
-		"vtsls",
+		"tsgo",
 		"gopls",
 		"tailwindcss",
 		"jsonls",

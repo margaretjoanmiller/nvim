@@ -68,7 +68,6 @@ nmap_leader('bW', '<Cmd>lua MiniBufremove.wipeout(0, true)<CR>', 'Wipeout!')
 local edit_plugin_file = function(filename)
   return string.format('<Cmd>edit %s/plugin/%s<CR>', vim.fn.stdpath('config'), filename)
 end
-local explore_at_file = '<Cmd>lua MiniFiles.open(vim.api.nvim_buf_get_name(0))<CR>'
 local explore_quickfix = function()
   vim.cmd(vim.fn.getqflist({ winid = true }).winid ~= 0 and 'cclose' or 'copen')
 end
@@ -77,7 +76,6 @@ local explore_locations = function()
 end
 
 nmap_leader('ed', '<Cmd>lua MiniFiles.open()<CR>',    'Directory')
-nmap_leader('ef', explore_at_file,                    'File directory')
 nmap_leader('ei', '<Cmd>edit $MYVIMRC<CR>',           'init.lua')
 nmap_leader('eq', explore_quickfix,                   'Quickfix list')
 nmap_leader('eQ', explore_locations,                  'Location list')
