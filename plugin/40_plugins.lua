@@ -107,6 +107,7 @@ now_if_args(function()
 			"tsgo",
 			"gopls",
 			"templ",
+			"copilot-language-server",
 			"rust-analyzer",
 			"tailwindcss-language-server",
 			"json-lsp",
@@ -148,6 +149,7 @@ now_if_args(function()
 	-- Per-server overrides go in after/lsp/<server>.lua
 	vim.lsp.enable({
 		"lua_ls",
+		"copilot",
 		"tsgo",
 		"gopls",
 		"tailwindcss",
